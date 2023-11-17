@@ -1,0 +1,26 @@
+{
+  "name": "git-history-questions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": "./dist/index.js",
+  "scripts": {
+    "clean": "shx rm -fr ./dist",
+    "build": "pnpm clean && tsc -outDir ./dist",
+    "cli": "node ./dist/index.js"
+  },
+  "dependencies": {
+    "commander": "~11.0.0",
+    "debug": "~4.3.4",
+    "faiss-node": "~0.5.1",
+    "langchain": "~0.0.186",
+    "simple-git": "~3.20.0"
+  },
+  "devDependencies": {
+    "@types/debug": "~4.1.12",
+    "@types/node": "~16.18.42",
+    "prettier": "^2.6.2",
+    "shx": "~0.3.4",
+    "typescript": "~5.1.3"
+  }
+}
