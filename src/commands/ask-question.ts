@@ -33,7 +33,7 @@ const QA_PROMPT_TEMPLATE = `
   Each commit message is in format of: A commit was made by "author name" with email "author email", on date "commit date", with a message "commit message".
   ----------------
   CONTEXT: >>> {context} <<<
-  ANSWER: (formatted nicely in plain text)
+  ANSWER: (formatted nicely in text):
 `;
 
 const askQuestion = async ({ input }: Readonly<Options>) => {
